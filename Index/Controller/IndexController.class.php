@@ -3,9 +3,16 @@ class IndexController extends CommonController{
 	public function __auto(){
 
 	}
+	
+	/* public function __empty()
+	{
+	    echo 'empty method';
+	} */
+	
 	public function index(){
-	    $arr = array('a','b');
-	    $this->assign('var', 'php1');
+	    
+	    $result = M('article')->field('title')->where('cid=1')->find();
+	    p($result);
 		$this->display();
 	}
 }

@@ -1,7 +1,7 @@
 <?php
 
 /**
- *  ����Controller
+ *  Controller
  */
 class Controller{
 	private $var = array();
@@ -13,18 +13,12 @@ class Controller{
 			$this->__auto();
 		}
 	}
-	/**
-	 *  �ɹ���ʾ��
-	 */
 	protected function success($msg,$url=NULL,$time=3){
 		$url = $url ? "window.location.href='" . $url . "'" : 'javascript:window.history.back(-1)';
 		include APP_TPL_PATH.'/success.html';
 		die;
 	}
 
-	/**
-	 *  ʧ����ʾ��
-	 */
 	protected function error($msg,$url=NULL,$time=3){
 		$url = $url ? "window.location.href='" . $url . "'" : 'javascript:window.history.back(-1)';
 		include APP_TPL_PATH.'/error.html';

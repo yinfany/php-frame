@@ -13,7 +13,7 @@ function halt($error,$level='ERROR',$type=3,$dest=NULL)
     $e = array();
     if(DEBUG)
     {
-        if(is_array($error))
+        if(!is_array($error))
         {
             $trace = debug_backtrace();
             $e['message'] = $error;
@@ -28,11 +28,12 @@ function halt($error,$level='ERROR',$type=3,$dest=NULL)
         }
         else 
         {
-           $e = $error; 
+            $e = $error; 
         }
     }
     else 
     {
+        
         if($url = C('ERROR_URL'))
         {
             go($url);
@@ -114,8 +115,17 @@ function C($var = NULL, $value = NULL){
     
 }
 
+/**
+ * 获取系统常量
+ */
 function print_const()
 {
     $const = get_defined_constants(true);
     p($const);
+}
+
+function M($table)
+{
+    $obj = new Model($table);
+    return $obj;
 }

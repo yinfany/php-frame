@@ -27,6 +27,14 @@ final class KUAIXUEPHP{
 		define('LIB_PATH',KUAIXUEPHP_PATH.'/Lib');
 		define('CORE_PATH',LIB_PATH.'/Core');
 		define('FUNCTION_PATH',LIB_PATH.'/Function');
+		
+		//扩展目录
+		define('EXTENDS_PATH', KUAIXUEPHP_PATH.'/Extends');
+		//扩展工具
+		define('TOOL_PATH', EXTENDS_PATH.'/Tool');
+		//第三方目录
+		define('ORG_PATH', EXTENDS_PATH.'/Org');
+		
 		define('ROOT_PATH',dirname(KUAIXUEPHP_PATH));
 		//临时目录
 		define('TEMP_PATH', ROOT_PATH.'/Temp');
@@ -38,8 +46,26 @@ final class KUAIXUEPHP{
 		define('APP_CONTROLLER_PATH',APP_PATH.'/Controller');
 		define('APP_TPL_PATH',APP_PATH.'/Tpl');
 		define('APP_PUBLIC_PATH', APP_TPL_PATH.'/Public');
+		//创建公共目录
+		define('COMMON_PATH', ROOT_PATH .'/Common');
+		//公共配置项文件夹
+		define('COMMON_CONFIG_PATH', COMMON_PATH.'/Config');
+		//公共模型文件夹
+		define('COMMON_MODEL_PATH', COMMON_PATH.'/Model');
+		//公共库文件夹
+		define('COMMON_LIB_PATH', COMMON_PATH.'/Lib');
+		
 		
 		define('KUAIXUEAPP_VERSION','1.0');
+		define('IS_POST', ($_SERVER['REQUEST_METHOD'] == 'POST') ? true : false);
+		if(isset($_SERVER['HTTP_X_REQUESTED_WITH']) && $_SERVER['HTTP_X_REQUESTED_WITH'] == 'XMLHttpRequest')
+		{
+		    define('IS_AJAX', true);
+		}
+		else 
+		{
+		    define('IS_AJAX', false);
+		}
 	}
 
 	/**
@@ -48,6 +74,9 @@ final class KUAIXUEPHP{
 	*/
 	private static function _create_dir(){
 		$arr = array(
+		    COMMON_CONFIG_PATH,
+		    COMMON_MODEL_PATH,
+		    COMMON_LIB_PATH,
 			APP_PATH,
 			APP_CONFIG_PATH,
 			APP_CONTROLLER_PATH,

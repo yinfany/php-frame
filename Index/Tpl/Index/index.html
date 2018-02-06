@@ -3,8 +3,27 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
+<script type="text/javascript" src="<?php echo __PUBLIC__?>/js/jquery.js"></script>
+<script type="text/javascript">
+$(function(){
+    $('form').submit(function(){
+    	$.ajax({
+    		url: '<?php echo __APP__ ?>',
+    			
+    		
+    	})
+        return false;
+    }
+    )
+})
+</script>
 </head>
 <body>
-<?php echo $var; ?>
+<form action="" method="post">
+<input type="text" name="username">
+<br/>
+<input type="password" name="password"><br/>
+<input type="submit" value="提交">
+</form>
 </body>
 </html>
