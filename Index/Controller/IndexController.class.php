@@ -9,11 +9,14 @@ class IndexController extends CommonController{
 	    echo 'empty method';
 	} */
 	
-	public function index(){
-	    
-	    $result = M('article')->field('title')->where('cid=1')->find();
-	    p($result);
-		$this->display();
+	public function index()
+	{
+	    if(!$this->is_cached())
+	    {
+	        $this->assign('test', time());
+	    }
+	    //$this->assign('test', time());
+	    $this->display();
 	}
 }
 ?>

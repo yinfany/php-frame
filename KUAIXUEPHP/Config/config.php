@@ -20,5 +20,11 @@ return array(
     //自动加载Common/Lib目录 下的文件，可以载入多个
     'AUTO_LOAD_FILE' => array('func.php'),
     
+    //Smarty配置项
+    'SMARTY_ON' => true,
+    'LEFT_DELIMITER' => '{kx',
+    'RIGHT_DELIMITER' => '}',
+    'CACHE_ON' => true,
+    'CACHE_LIFETIME' => 5,
     
 );

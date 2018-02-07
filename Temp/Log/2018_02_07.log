@@ -1,0 +1,23 @@
+[TIME]:2018-02-07 09:51:14 ERROR:mysql错误：<br/>SQL:
+[TIME]:2018-02-07 09:54:37 ERROR:删除语句必须有where条件
+[TIME]:2018-02-07 10:29:06 ERROR:mysql错误：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'set title='111' WHERE id=21' at line 1<br/>SQL:update  set title='111' WHERE id=21
+[TIME]:2018-02-07 10:41:10 ERROR:E:/WWW/php-frame/KUAIXUEPHP/Extends/Tool/ArticleModel.class.php类未找到
+[TIME]:2018-02-07 10:46:47 ERROR:Class 'ArtilceModel' not foundE:\WWW\php-frame\KUAIXUEPHP\Lib\Function\function.php第136行
+[TIME]:2018-02-07 11:36:12 ERROR:Call to a member function display() on nullE:\WWW\php-frame\KUAIXUEPHP\Lib\Core\SmartyView.class.php第34行
+[TIME]:2018-02-07 11:37:28 ERROR:Call to a member function display() on nullE:\WWW\php-frame\KUAIXUEPHP\Lib\Core\SmartyView.class.php第34行
+[TIME]:2018-02-07 11:40:42 ERROR:Call to a member function display() on nullE:\WWW\php-frame\KUAIXUEPHP\Lib\Core\SmartyView.class.php第34行
+[TIME]:2018-02-07 11:42:58 ERROR:Call to a member function display() on nullE:\WWW\php-frame\KUAIXUEPHP\Lib\Core\SmartyView.class.php第34行
+[TIME]:2018-02-07 11:44:47 ERROR:Call to a member function display() on nullE:\WWW\php-frame\KUAIXUEPHP\Lib\Core\SmartyView.class.php第34行
+[TIME]:2018-02-07 11:44:48 ERROR:Call to a member function display() on nullE:\WWW\php-frame\KUAIXUEPHP\Lib\Core\SmartyView.class.php第34行
+[TIME]:2018-02-07 11:44:48 ERROR:Call to a member function display() on nullE:\WWW\php-frame\KUAIXUEPHP\Lib\Core\SmartyView.class.php第34行
+[TIME]:2018-02-07 11:45:59 ERROR:Call to a member function display() on nullE:\WWW\php-frame\KUAIXUEPHP\Lib\Core\SmartyView.class.php第34行
+[TIME]:2018-02-07 11:47:20 ERROR:Call to a member function display() on nullE:\WWW\php-frame\KUAIXUEPHP\Lib\Core\SmartyView.class.php第34行
+[TIME]:2018-02-07 11:47:20 ERROR:Call to a member function display() on nullE:\WWW\php-frame\KUAIXUEPHP\Lib\Core\SmartyView.class.php第34行
+[TIME]:2018-02-07 11:47:21 ERROR:Call to a member function display() on nullE:\WWW\php-frame\KUAIXUEPHP\Lib\Core\SmartyView.class.php第34行
+[TIME]:2018-02-07 11:47:21 ERROR:Call to a member function display() on nullE:\WWW\php-frame\KUAIXUEPHP\Lib\Core\SmartyView.class.php第34行
+[TIME]:2018-02-07 11:47:22 ERROR:Call to a member function display() on nullE:\WWW\php-frame\KUAIXUEPHP\Lib\Core\SmartyView.class.php第34行
+[TIME]:2018-02-07 11:47:22 ERROR:Call to a member function display() on nullE:\WWW\php-frame\KUAIXUEPHP\Lib\Core\SmartyView.class.php第34行
+[TIME]:2018-02-07 11:47:22 ERROR:Call to a member function display() on nullE:\WWW\php-frame\KUAIXUEPHP\Lib\Core\SmartyView.class.php第34行
+[TIME]:2018-02-07 11:55:49 ERROR:Call to undefined function assign()E:\WWW\php-frame\KUAIXUEPHP\Lib\Core\Controller.class.php第61行
+[TIME]:2018-02-07 11:56:30 ERROR:Call to undefined method SmartyView::assign()E:\WWW\php-frame\KUAIXUEPHP\Lib\Core\Controller.class.php第61行
+[TIME]:2018-02-07 13:48:59 ERROR:请先开启smarty!

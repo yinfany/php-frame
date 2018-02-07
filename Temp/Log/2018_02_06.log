@@ -64,3 +64,5 @@
 [TIME]:2018-02-06 16:34:39 ERROR:mysql错误No database selected<br/>SQL:select * from ff_article
 [TIME]:2018-02-06 16:46:00 ERROR:mysql错误You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM ff_article' at line 1<br/>SQL:SELECT  FROM ff_article
 [TIME]:2018-02-06 16:53:37 ERROR:Call to a member function all() on nullE:\WWW\php-frame\Index\Controller\IndexController.class.php第14行
+[TIME]:2018-02-06 17:50:06 ERROR:mysql错误：<br/>SQL:
+[TIME]:2018-02-06 17:50:32 ERROR:mysql错误：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'se' at line 1<br/>SQL:se
